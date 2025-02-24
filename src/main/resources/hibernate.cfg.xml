@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--this copy from Google [hibernate dtd] first website open find hibernate and copy paste here-->
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Note_Taker_project</property>
+      <property name="connection.username">root</property>
+        <property name="connection.password">Mola^512</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+       <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <mapping class="com.model.Note"/>
+        <mapping class="com.model.User"/>
+        <mapping class="com.model.Reminder"/>
+
+
+        <!--        private static final String url = "jdbc:mysql://localhost:3306/banking_system";-->
+<!--        private static final String username = "root";-->
+<!--        private static final String password = "Mola^512";-->
+
+    </session-factory>
+</hibernate-configuration>
